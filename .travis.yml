@@ -3,6 +3,9 @@ node_js:
   - '9'
   - '8'
   - '6'
+before_script:
+  # npm < 4
+  - if [[ $(node -v) =~ ^v6.*$ ]]; then npm run prepare; fi
 cache:
   directories:
     - ~/.npm
