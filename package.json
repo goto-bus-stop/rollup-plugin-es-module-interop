@@ -1,0 +1,38 @@
+{
+  "name": "rollup-plugin-es-module-interop",
+  "description": "change the rollup commonjs output for external imports to check `module.__esModule`",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "module": "index.js",
+  "main": "dist/rollup-plugin-es-module-interop.cjs.js",
+  "files": [
+    "index.js",
+    "index.cjs.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop/issues"
+  },
+  "devDependencies": {
+    "joi": "^13.1.2",
+    "rollup": "^0.57.1",
+    "standard": "^11.0.1",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop",
+  "keywords": [
+    "commonjs",
+    "es-modules",
+    "interop",
+    "rollup"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "standard && tape test/*.js | tap-spec"
+  }
+}
