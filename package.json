@@ -32,6 +32,7 @@
     "url": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop.git"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "rollup -c",
     "test": "standard && tape test/*.js | tap-spec"
   }
