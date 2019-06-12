@@ -8,16 +8,13 @@ const interopDefault = `
 // `.default` export.
 export default () => ({
   name: 'es-module-interop',
-  transformBundle (code, options) {
+  renderChunk (code, chunk, options) {
     if (options.format !== 'cjs') {
       return null
     }
-    return {
-      code: code.replace(
-        /\nfunction _interopDefault (.*?)\n/,
-        () => `\n${interopDefault.replace(/\n */g, ' ')}\n`
-      ),
-      map: null
-    }
+    return code.replace(
+      /\nfunction _interopDefault (.*?)\n/,
+      () => `\n${interopDefault.replace(/\n */g, ' ')}\n`
+    )
   }
 })

@@ -24,7 +24,8 @@ test('Can import joi', function (t) {
     external: [ 'joi' ]
   }).then((bundle) => {
     return bundle.generate({ format: 'cjs' })
-  }).then(({ code }) => {
+  }).then((outputs) => {
+    var code = outputs.output[0].code
     var module = { exports: {} }
     vm.runInNewContext(code, { require, module })
     joi.validate('abcdef', module.exports, (err) => {

@@ -13,11 +13,11 @@
     "url": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop/issues"
   },
   "devDependencies": {
-    "joi": "^13.1.2",
-    "rollup": "^0.57.1",
-    "standard": "^11.0.1",
-    "tap-spec": "^4.0.2",
-    "tape": "^4.0.0"
+    "joi": "^13.7.0",
+    "rollup": "^1.15.1",
+    "standard": "^12.0.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.2"
   },
   "homepage": "https://github.com/goto-bus-stop/rollup-plugin-es-module-interop",
   "keywords": [
