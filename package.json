@@ -3,7 +3,7 @@
   "description": "change the rollup commonjs output for external imports to check `module.__esModule`",
   "version": "1.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
-  "module": "index.js",
+  "module": "index.mjs",
   "main": "dist/rollup-plugin-es-module-interop.cjs.js",
   "files": [
     "index.js",
