@@ -6,5 +6,6 @@ export default {
     format: 'cjs',
     exports: 'default',
     file: pkg.main
-  }
+  },
+  external: ['magic-string']
 }
